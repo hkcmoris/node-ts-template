@@ -5,9 +5,8 @@
     "type": "module",
     "engines": {
         "node": ">=22 <27",
-        "npm": ">=11"
+        "npm": ">=10"
     },
-    "packageManager": "npm@11.18.0",
     "scripts": {
         "dev": "tsx watch src/index.ts",
         "build": "tsc -p tsconfig.build.json",
