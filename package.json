@@ -4,14 +4,14 @@
     "private": true,
     "type": "module",
     "engines": {
-        "node": ">=22 <27",
+        "node": ">=22.18 <27",
         "npm": ">=10"
     },
     "scripts": {
         "dev": "tsx watch src/index.ts",
         "build": "tsc -p tsconfig.build.json",
         "start": "node dist/index.js",
-        "test": "node --test",
+        "test": "node --import tsx --test \"test/**/*.test.ts\"",
         "typecheck": "tsc --noEmit -p tsconfig.json",
         "lint": "eslint .",
         "format": "prettier . --write",
