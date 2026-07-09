@@ -1,8 +1,10 @@
-import { strictEqual } from 'node:assert/strict';
+import { doesNotThrow } from 'node:assert/strict';
 import { test } from 'node:test';
 
-import { add } from '../src/index.js';
+import { main } from '../src/main.js';
 
 void test('smoke test', () => {
-    strictEqual(add(1, 2), 3);
+    doesNotThrow(() => {
+        main();
+    });
 });
